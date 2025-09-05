@@ -54,7 +54,7 @@ export default function App() {
               textShadow: "2px 2px 10px rgba(0,0,0,0.6)",
             }}
           >
-            💌 إلى أغلى شخص في حياتي 💌
+            💌 To my best person Aouatif💌
           </h1>
           <button
             onClick={() => setShowLetter(true)}
@@ -77,7 +77,7 @@ export default function App() {
               (e.currentTarget.style.transform = "scale(1)")
             }
           >
-            إقرئي رسالتي
+            read my words 
           </button>
         </>
       ) : (
