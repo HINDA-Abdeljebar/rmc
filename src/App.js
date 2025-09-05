@@ -1,6 +1,6 @@
 import { useState } from "react";
-import bgImage1 from "./assest/image1.jpg"; // ✅ first background
-import bgImage2 from "./assest/image.jpg"; // ✅ second background
+import bgImage1 from "./assest/image2.jpg"; // ✅ first background
+import bgImage2 from "./assest/image3.jpg"; // ✅ second background
 
 export default function App() {
   const [showLetter, setShowLetter] = useState(false);
@@ -48,14 +48,25 @@ export default function App() {
 
       {!showLetter ? (
         <>
-          <h1
-            style={{
-              fontSize: "3rem",
-              textShadow: "2px 2px 10px rgba(0,0,0,0.6)",
-            }}
-          >
-            💌 To my best person Aouatif💌
-          </h1>
+         <h2 style={{ fontSize: "2.5rem", fontWeight: "normal" }}>
+  
+  <span
+    style={{
+      fontSize: "3.2rem",
+      fontFamily: "'Dancing Script', cursive",
+      background: "linear-gradient(90deg, #ff758c, #ff7eb3)",
+      WebkitBackgroundClip: "text",
+      WebkitTextFillColor: "transparent",
+      textShadow: "2px 2px 12px rgba(255, 118, 136, 0.6)",
+      display: "inline-block", // ✅ keeps it inline but allows styling
+      margin: "0 8px",
+    }}
+  >
+    Aouatif 
+  </span>
+    To my best person{" "} 🤍
+</h2>
+
           <button
             onClick={() => setShowLetter(true)}
             style={{
